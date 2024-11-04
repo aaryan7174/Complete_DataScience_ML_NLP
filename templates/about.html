@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Interactive Web Inc.</title>
+    <style>
+        /* Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Background */
+        body {
+            background: linear-gradient(135deg, #1f1c2c, #928dab);
+            color: #fff;
+            overflow-x: hidden;
+        }
+
+        /* Navbar */
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 10;
+        }
+
+        .navbar a {
+            color: #ffffff;
+            margin-left: 20px;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .navbar a:hover {
+            color: #ff7e5f;
+        }
+
+        /* About Section */
+        .about-section {
+            margin-top: 80px;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .about-section h1 {
+            font-size: 2.8rem;
+            margin-bottom: 20px;
+            animation: fadeIn 1.5s ease;
+        }
+
+        .about-section p {
+            font-size: 1.2rem;
+            color: #d3d3d3;
+            max-width: 800px;
+            margin: 0 auto;
+            animation: fadeIn 2s ease;
+        }
+
+        /* Team Section */
+        .team-section {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .team-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .team {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .team-member {
+            width: 250px;
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 8px;
+            transition: transform 0.3s;
+            text-align: center;
+        }
+
+        .team-member:hover {
+            transform: scale(1.05);
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        .team-member img {
+            width: 100%;
+            border-radius: 50%;
+            margin-bottom: 10px;
+            border: 4px solid #ff7e5f;
+            transition: transform 0.3s;
+        }
+
+        .team-member:hover img {
+            transform: scale(1.1);
+        }
+
+        .team-member h3 {
+            font-size: 1.2rem;
+            margin: 10px 0;
+        }
+
+        .team-member p {
+            font-size: 0.9rem;
+            color: #d3d3d3;
+        }
+
+        /* Call-to-Action */
+        .cta-section {
+            padding: 40px 20px;
+            background-color: rgba(255, 255, 255, 0.1);
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .cta-section h2 {
+            font-size: 2rem;
+            margin-bottom: 15px;
+        }
+
+        .cta-btn {
+            padding: 15px 40px;
+            font-size: 1rem;
+            color: #ffffff;
+            background-color: #ff7e5f;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .cta-btn:hover {
+            transform: scale(1.1);
+            background-color: #ff5f6d;
+        }
+
+        /* Footer */
+        footer {
+            padding: 20px;
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">My Brand</div>
+        <div>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="#team">Team</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <h1>About Us</h1>
+        <p>We are a dedicated team of professionals with a passion for web development, digital marketing, and creating seamless online experiences. Our mission is to bring innovative solutions to help our clients succeed in a rapidly evolving digital landscape.</p>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team-section" id="team">
+        <h2>Meet Our Team</h2>
+        <div class="team">
+            <div class="team-member">
+                <img src="https://via.placeholder.com/150" alt="Team Member">
+                <h3>John Doe</h3>
+                <p>CEO & Founder</p>
+            </div>
+            <div class="team-member">
+                <img src="https://via.placeholder.com/150" alt="Team Member">
+                <h3>Jane Smith</h3>
+                <p>Lead Developer</p>
+            </div>
+            <div class="team-member">
+                <img src="https://via.placeholder.com/150" alt="Team Member">
+                <h3>Sam Wilson</h3>
+                <p>Marketing Head</p>
+            </div>
+            <div class="team-member">
+                <img src="https://via.placeholder.com/150" alt="Team Member">
+                <h3>Lisa Wong</h3>
+                <p>UX/UI Designer</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call-to-Action Section -->
+    <section class="cta-section" id="contact">
+        <h2>Want to Work With Us?</h2>
+        <button class="cta-btn" onclick="location.href='contact.html'">Get In Touch</button>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Interactive Web Inc. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

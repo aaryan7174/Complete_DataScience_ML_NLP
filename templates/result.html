@@ -1,0 +1,6 @@
+<h1>Based on the marks you have {{ results }}</h1>
+{% if results == 'PASS' %}
+    <h1>Passed with marks {{ score }}</h1>
+{% else %}
+    <h1>Failed with marks {{ score }}</h1>
+{% endif %}
